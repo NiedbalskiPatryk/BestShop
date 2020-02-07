@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font1-font-family: 'Raleway', sans-serif;
+    --font2-font-family: 'Open Sans', sans-serif;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1352px;
+    margin: 0 auto;
+}
+
+.logo__nav {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 1352px;
+    box-shadow: #00000029 0px 3px 6px;
+}
+
+.logo {
+    width: 142px;
+    height: 37px;
+    font-family: var(--font1-font-family);
+    font-weight: lighter;
+    font-size: 32px;
+    width: 142px;
+    color: #08A6E4;
+    text-decoration: none;
+    padding: 16px 0 17px 136px;
+}
+
+.header__nav {
+    height: 100%;
+}
+
+.nav__list {
+    display: flex;
+    margin-right: 136px;
+    list-style: none;
+    line-height: 68px;
+}
+
+.nav__list li {
+    margin-left: 94px;
+    height: 100%;
+}
+
+.nav__list li a {
+    display: inline-block;
+    height: 100%;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: var(--font2-font-family);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3.28px;
+    color: #A5A5A5;
+
+}
+
+.nav__list li a:hover {
+    color: #000000;
+    border-bottom: 4px #08A6E4 solid;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 712px;
+    width: 100%;
+}
+
+.section1__h1 {
+    font-family: var(--font1-font-family);
+    font-size: 49px;
+    margin-top: 130px;
+    height: 57px;
+    text-align: center;
+    line-height: 57px;
+    font-weight: lighter;
+}
+
+.section1__span {
+    font-family: var(--font2-font-family);
+    margin: 20px 0 38px 0;
+
+}
+
+.section1__btn {
+    display: inline-block;
+    width: 440px;
+    height: 67px;
+    background-color: #08A6E4;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: var(--font2-font-family);
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+}
+
+
+.background__img {
+    background-image: url(../02_attachment.pl/assets/Background.png);
+    height: 594px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
