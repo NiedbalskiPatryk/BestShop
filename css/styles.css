@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+/* body {
+    height: 200vh;
+} */
+
 :root {
     --font1-font-family: 'Raleway', sans-serif;
     --font2-font-family: 'Open Sans', sans-serif;
@@ -12,7 +16,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     max-width: 1352px;
     margin: 0 auto;
@@ -22,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     height: 4.5rem;
-    max-width: 1352px;
+    width: 1352px;
     box-shadow: #00000029 0px 3px 6px;
 }
 
@@ -46,7 +50,7 @@
     display: flex;
     margin-right: 8rem;
     list-style: none;
-    line-height: 4rem;
+    line-height: 4.5rem;
 }
 
 .nav__list li {
@@ -78,7 +82,7 @@
     flex-direction: column;
     align-items: center;
     height: 40rem;
-    width: 100%;
+    width: 1352px;
 }
 
 .section1__h1 {
@@ -102,7 +106,7 @@
     background-color: #08A6E4;
     border-radius: 2.5rem;
     font-size: 1rem;
-    font-family: var(--font2-font-family);
+    font-family: var(--font1-font-family);
     color: #FFFFFF;
     font-weight: bold;
     border: none;
@@ -112,7 +116,7 @@
 .background__img {
     background-image: url(../02_attachment.pl/assets/Background.png);
     height: 37rem;
-    width: 100%;
+    width: 1352px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -206,6 +210,204 @@
     z-index: -1;
 }
 
-.section3__container {
+/* kontener do ustawienia */
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 1352px;
+    background-color: #F7F7F7;
+    /* HEIGHT DO USUNIECIA */
+    /* height: 200vh; */
+}
+
+.section3__article1 {
+    display: flex;
+    justify-content: space-between;
     width: 1124px;
+    padding: 90px 20px 0 20px;
+    background-color: #FFFFFF;
+    border: #E8E9ED solid 1px;
+    border-radius: 5px;
+    position: relative;
+    margin: 100px 100px 40px 100px;
+}
+
+.section3__text1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.section3__text1 h1 {
+    font-size: 36px;
+    font-family: var(--font1-font-family);
+    font-weight: 400;
+    padding: 0 0 30px 0;
+}
+
+.section3__text1 p {
+    font-size: 1rem;
+    font-family: var(--font2-font-family);
+    padding-bottom: 50px;
+    line-height: 22px;
+}
+
+.section3__text1 .border__bottom {
+    height: 1px;
+    border-bottom: 4px solid #FB3B64;
+    width: 60%;
+}
+
+.container__img1 {
+    position: relative;
+    height: 20rem;
+    width: 400px;
+    /* padding: 0 0 0 50px; */
+}
+
+.section3__article1__img {
+    background-image: url(../02_attachment.pl/assets/Macbook.png);
+    height: 12rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+
+}
+
+.container__img1:before {
+    content: "";
+    width: 10rem;
+    height: 10rem;
+    background-color: #FB3B64;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    border-radius: 41px;
+    position: absolute;
+    right: 17%;
+
+}
+
+.section3__article2 {
+    display: flex;
+    justify-content: space-between;
+    width: 1124px;
+    padding: 20px 30px;
+    background-color: #FFFFFF;
+    border: #E8E9ED solid 1px;
+    border-radius: 5px;
+    margin-top: 2.5rem;
+    position: relative;
+}
+
+.section3__text2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-right: 50px;
+}
+
+.section3__text2 h1 {
+    font-size: 36px;
+    font-family: var(--font1-font-family);
+    font-weight: 400;
+    padding: 50px 0 30px 0;
+}
+
+.section3__text2 p {
+    font-size: 1rem;
+    font-family: var(--font2-font-family);
+    padding-bottom: 50px;
+    line-height: 22px;
+}
+
+.section3__text2 .border__bottom {
+    height: 1px;
+    border-bottom: 4px solid #07ACE6;
+    width: 60%;
+}
+
+.container__img2 {
+    position: relative;
+    height: 20rem;
+    width: 400px;
+    padding: 0 0 0 50px;
+}
+
+.section3__article2__img {
+    background-image: url(../02_attachment.pl/assets/iPhone.png);
+    height: 20rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.container__img2:before {
+    content: "";
+    width: 17rem;
+    height: 17rem;
+    background-color: #07ACE6;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.section3__article3 {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 100px 100px 40px 100px;
+    width: 1124px;
+
+}
+
+.section3__text3 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 30px 20px 50px 20px;
+    background-color: #FFFFFF;
+    border: #E8E9ED solid 1px;
+    border-radius: 5px;
+}
+
+.section3__text3 h1 {
+    font-size: 36px;
+    font-family: var(--font1-font-family);
+    font-weight: 400;
+    padding: 0 0 30px 0;
+}
+
+.section3__text3 p {
+    font-size: 1rem;
+    font-family: var(--font2-font-family);
+    padding-bottom: 50px;
+    line-height: 22px;
+}
+
+.section3__text3 .border__bottom {
+    height: 1px;
+    border-bottom: 4px solid #55DFB4;
+    width: 60%;
+}
+
+.container__img3 {
+    width: 32%;
+    background-color: #55DFB4;
+    border: #E8E9ED solid 1px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.section3__article3__img {
+    background-image: url(../02_attachment.pl/assets/Trumpet.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    transform: translate(16%, 30%);
 }
