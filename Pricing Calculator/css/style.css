@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --font1-font-family: 'Raleway', sans-serif;
+    --font2-font-family: 'Open Sans', sans-serif;
+    --size1-font-size: 16px;
+    --blue-color: #08A6E4;
+    --red-color: #FB3B64;
+    --green-color: #55DFB4;
+    --black-color: #000000;
+    --darkestGrey-color: #707070;
+    --darkGrey-color: #95989A;
+    --grey-color: #A5A5A5;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1352px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: #F7F7F7;
+    padding: 0 20rem;
+}
+
+.calculator__h2__text {
+    margin: 0 auto;
+    font-family: var(--font1-font-family);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 5rem 0 3rem;
+}
+
+.calculator__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input.number,
+select {
+    width: 27.5rem;
+    padding: 0.7rem 1.25rem;
+    background-color: white;
+    border: var(--blue-color) 1px solid;
+    border-radius: 6px;
+    box-shadow: #08A6E429 0 3px 6px;
+    font-family: var(--font2-font-family);
+    font-size: 0.8rem;
+}
+
+
+#package {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Remove default arrow */
+    background-image: url(../assets/Arrow\ Down.svg);
+    /* Add custom arrow */
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+
+input::placeholder,
+select {
+    color: var(--grey-color);
+    font-family: var(--font2-font-family);
+    font-size: 0.8rem;
+}
+
+option[value=""][disabled] {
+    color: var(--grey-color);
+    font-family: var(--font2-font-family);
+    font-size: 0.8rem;
+    padding: 0.7rem 1.25rem;
+}
+
+
+.checkbox__container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
+    background: #fff;
+    outline: none;
+    position: relative;
+}
+
+.checkbox:checked {
+    background: white;
+}
+
+.checkbox:checked:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-image: url(/02_attachment.pl/assets/Checkmark.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox__span {
+    display: inline-block;
+    padding: 0.33rem 0 0.33rem 0.66rem;
+    font-size: 0.75rem;
+    color: var(--darkestGrey-color);
+    font-family: var(--font2-font-family);
+}
+
+
+.calculator__results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 3rem;
+    height: 16rem;
+    width: 25rem;
+}
+
+.calculator__results div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: #00000029 0 3px 6px;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.calculator__results .green {
+    display: none;
+    width: 100%;
+    background-color: var(--green-color);
+    box-sizing: border-box;
+}
+
+.calculator__results .blue {
+    width: 50%;
+    background-color: var(--blue-color);
+    /* align-self: flex-end; */
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.calculator__results p {
+    font-family: var(--font2-font-family);
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.calculator__results .type {
+    width: 30%;
+}

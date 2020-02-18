@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="section__container">
+        <h2 class="calculator__h2__text">Calculate how much you’ll pay</h2>
+        <div class="calculator__container">
+            <form action="">
+                <input class="number" min="1" type="number" name="" step="1" id="quantity"
+                    placeholder="Products quantity">
+                <input class="number" min="1" type="number" name="" step="1" id="number__orders"
+                    placeholder="Estimated orders in month">
+                <select name="Choose package" id="package">
+                    <option value="" disabled selected>Choose package<img src="./assets/Arrow Down.svg" alt=""></option>
+                    <option value="Basic">Basic</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Premium">Premium</option>
+                </select>
+                <div class="checkbox__container">
+                    <input id="checkboxAccounting" class="checkbox" type="checkbox" name="">
+                    <span class="checkbox__span">Accounting</span>
+                </div>
+                <div class="checkbox__container">
+                    <input id="checkboxRental" class="checkbox" type="checkbox" name="">
+                    <span class="checkbox__span">Rental of a
+                        payment terminal</span>
+                </div>
+            </form>
+            <div class="calculator__results">
+                <div class="green productsdiv">
+                    <p class="type">Products</p>
+                    <p class="order products"> * $0.5</p>
+                    <p class="price totalPrice">$</p>
+                </div>
+                <div class="green ordersdiv">
+                    <p class="type">Orders</p>
+                    <p class="order orders"> * $0.25</p>
+                    <p class="price totalOrders">$</p>
+                </div>
+                <div class="green packagediv">
+                    <p class="type">Package</p>
+                    <p class="order package"></p>
+                    <p class="price totalPackage">$</p>
+                </div>
+                <div class="green accountingdiv">
+                    <p class="type">Accounting</p>
+                    <p class="order"></p>
+                    <p class="price totalAccount">$</p>
+                </div>
+                <div class="green rentaldiv">
+                    <p class="type">Terminal</p>
+                    <p class="order"></p>
+                    <p class="price totalRental">$</p>
+                </div>
+                <div class="blue">
+                    <p class="type">Total</p>
+                    <p class="price big">$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./js/app.js"></script>
+
+</html>
